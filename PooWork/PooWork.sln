@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooWork.Core", "PooWork.Core\PooWork.Core.csproj", "{E6DA667E-49F1-48B4-99F7-70589AE43C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooWork.Console", "PooWork.Console\PooWork.Console.csproj", "{1C4EBA20-101B-4E4B-9FE3-F0B68982D19D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6DA667E-49F1-48B4-99F7-70589AE43C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6DA667E-49F1-48B4-99F7-70589AE43C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6DA667E-49F1-48B4-99F7-70589AE43C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6DA667E-49F1-48B4-99F7-70589AE43C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C4EBA20-101B-4E4B-9FE3-F0B68982D19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4EBA20-101B-4E4B-9FE3-F0B68982D19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4EBA20-101B-4E4B-9FE3-F0B68982D19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4EBA20-101B-4E4B-9FE3-F0B68982D19D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA0EE3E7-9145-43F3-A49C-4D0AF10B8DC5}
+	EndGlobalSection
+EndGlobal
