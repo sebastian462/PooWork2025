@@ -106,7 +106,7 @@ namespace PooWork.Core
         public override string ToString()
         {
             DateTime dateTime = new DateTime(1, 1, 1, Hour, Minute, Second, Millisecond);
-            return dateTime.ToString("hh:mm:ss.fff tt");
+            return dateTime.ToString("hh:mm:ss.fff tt", System.Globalization.CultureInfo.InvariantCulture);
         }
 
 
@@ -125,12 +125,12 @@ namespace PooWork.Core
             return (Hour * 60) + Minute;
         }
 
-        public bool IsOtherDay(int addHours, int addMinutes, int addSeconds, int addMilliseconds)
+        public bool IsOtherDay(Time other)
 
         {
             long totalMilliseconds = ToMilliseconds();
 
-            long addTotal = (addHours * 3600000L) + (addMinutes * 60000L) + (addSeconds * 1000L) + addMilliseconds;
+            long addTotal = other.ToMilliseconds();
 
             long newTotal = totalMilliseconds + addTotal;
 
@@ -139,11 +139,11 @@ namespace PooWork.Core
             return newTotal >= oneDay;
         }
 
-        public Time Add(int addHours, int addMinutes, int addSeconds, int addMilliseconds)
+        public Time Add(Time other)
 
         {
             long totalMilliseconds = ToMilliseconds();
-            long addTotal = (addHours * 3600000L) + (addMinutes * 60000L) + (addSeconds * 1000L) + addMilliseconds;
+            long addTotal = other.ToMilliseconds();
             long newTotal = (totalMilliseconds + addTotal) % 86400000L;
 
             int newHour = (int)(newTotal / 3600000);
@@ -156,16 +156,6 @@ namespace PooWork.Core
             int newMillisecond = (int)(newTotal % 1000);
 
             return new Time(newHour, newMinute, newSecond, newMillisecond);
-        }
-
-        public bool IsOtherDay(Time other)
-        {
-            return IsOtherDay(other.Hour, other.Minute, other.Second, other.Millisecond);
-        }
-
-        public Time Add(Time other)
-        {
-            return Add(other.Hour, other.Minute, other.Second, other.Millisecond);
         }
 
 
