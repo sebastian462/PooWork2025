@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PooWork.Core.Time">
-    <Position X="10.75" Y="2.5" Width="3.5" />
+    <Position X="10.75" Y="2" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>CAIACAAAAACEACAEAAAggAIEAEAIACIABAAAAAAwAgA=</HashCode>
+      <HashCode>AAIACAAAAACEACAEAAAgAAIEAEAIACIABAAAAAAwAgA=</HashCode>
       <FileName>Time.cs</FileName>
     </TypeIdentifier>
   </Class>
